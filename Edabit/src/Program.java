@@ -1,13 +1,16 @@
-import java.lang.*;
-// Create a method that alternates the case of the letters in a string.
-// Example: ThE InTeNt iS To pRoViDe pLaYeRs wItH A SeNsE Of pRiDe aNd aCcOmPlIsHmEnT FoR UnLoCkInG DiFfErEnT HeRoEs.
+import java.lang.String;
 
 public class Program {
-    public static String alternatingCaps(String s) {
-        String firstCharCapital = s.substring(0, 1).toUpperCase();
+    public static String verifySubstrs(String s1, String s2, String s3, String s4) {
+        // Verify if the first string starts with the second string,
+        // includes the third string, and ends with the fourth string.
+        // If the first string passes all checks, return the string
+        // "My head, body, and tail.", otherwise, return "Incomplete.".
 
-        // if there is a space, new word
-        return s;
+        if ((s1.startsWith(s2)) && (s1.contains(s3)) && (s1.endsWith(s4))){
+            return "My head, body, and tail.";
+        } else {
+            return "Incomplete.";
+        }
     }
-
 }
